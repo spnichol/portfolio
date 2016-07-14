@@ -1,0 +1,834 @@
+<style>
+
+html, body {
+	width: 100%;
+	height: 100%;
+ 
+}
+
+header#background {
+
+	background-image: url(../img/offblack1.jpg);
+	  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: ;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+
+  height: 100vh;
+ }
+
+.custnav {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+
+ .handbutton{
+      align-self:center;
+      background:transparent;
+      padding:1rem 1rem;
+      margin:0 1rem;
+      transition:all .5s ease;
+      color: white;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #41403E;
+      border-color: #F0C808;
+      font-family: "amatic sc";
+  }
+
+
+      
+.mainhead  {
+	font-family: "amatic sc";
+	text-transform:  uppercase;
+	color: #F2E9DC;
+	
+
+	
+}
+
+.title {
+
+}
+
+.line {
+	color: #F0C808;
+}
+
+.firsts
+{
+	color: #4CB944;
+}
+
+
+
+.description {
+	font-family: "andika", sans-serif;
+	color: #F2E9DC;
+	font-size: 4vh;
+	font-size: 2vw; }
+
+/*ABOUTME ----------------------------------------------------------------------------- */	
+.mastercont {
+	background-color: white;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+}
+
+
+.animation-cont {
+	background-color: #F06543;
+	height:100vh;
+	width: 100vw;
+	position: relative;
+	padding: 0;
+	margin: 0;
+
+}
+
+.first-slide {
+	color: #4CB944;
+	font-size: 10vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 22vw;
+	margin-left: 10vw;
+}
+
+.first-slide #roles1 {
+	color: #246EB9;
+}
+
+.first-slide #roles2 {
+	color: #F5EE9E;
+}
+
+.first-slide #roles3 {
+	color: #EEE5E9;
+}
+
+.second-slide {
+
+	color: #F5EE9E;
+	font-size: 10vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 27vw;
+	margin-left: 10vw;
+}
+
+
+.second-slide1 {
+
+	color: white;
+	font-size: 10vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 5vw;
+	margin-left: 10vw;
+}
+
+.bigrespon {
+
+	color: white;
+	font-size: 10vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 5vw;
+	margin-left: 10vw;
+}
+
+
+.bigrespon1 {
+
+	color: #DD1C1A;
+	font-size: 5vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 5vw;
+	margin-left: 10vw;
+}
+
+
+
+#popper {
+	font-size: 16vh;
+	color: #4CB944;
+}
+
+.third-slide {
+	color: #F06543;
+	font-size: 12vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 10vw;
+	margin-left: 10vw;
+
+}
+
+.third-slide1 {
+	color: #246EB9;
+	font-size: 10vh;
+	font-family: "amatic sc";
+	font-color: #06AED5;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 22vw;
+	margin-left: 10vw;
+}
+
+
+.downloadcv {
+	position: absolute;
+	bottom: 5vw;
+	right: 15vw;
+	max-height: 25vh;
+	max-width: 25vw;
+}
+
+.homeimage {
+	position: absolute;
+	bottom: 5vw;
+	left: 5vw;
+	max-height: 25vh;
+	max-width: 25vw;
+}
+
+btn.cvbutton {
+	
+      background:transparent;
+      padding:1rem 1rem;
+      margin:0 1rem;
+      transition:all .5s ease;
+      color: #246EB9;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #41403E;
+      border-color: #F0C808;
+      font-family: "amatic sc";
+      position: inline-block;
+}
+
+
+.bigbox1 {
+	background-color: #246EB9;
+	height:100vh;
+	width: 100vw;
+	position: relative;
+	padding: 0;
+	margin: 0;
+
+}
+
+.bigbox2 {
+	background-color: #F0C808;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.bigbox3 {
+	background-color: #086788;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.bigbox4 {
+	background-color: #DD1C1A;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+}
+
+
+
+
+/*PORTFOLIO PAGE ----------------------------------------------------------------------------- */	
+
+
+
+section#portfolio {
+	
+}
+
+.arrow  {
+	max-height: 15vh;
+	max-width: 15vw;
+	
+}
+
+.uparrow  {
+	max-height: 15vh;
+	max-width: 15vw;
+	
+}
+
+
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.tdlanding {
+	height: 100vh;
+	background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B51715 0%, #DD1C1A 100%); }
+
+.andiwear1landing {
+	height: 100vh;
+	background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B51715 0%, #DD1C1A 100%);
+}
+
+.andiwear2landing {
+	height: 100vh;
+	background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B51715 0%, #DD1C1A 100%);
+}
+
+
+.merkellanding {
+	height: 100vh;
+    background-image: -webkit-gradient(radial, left top, 0, left top, 572, color-stop(0, #086788), color-stop(100, #097399));
+}
+
+img.andiwear1img {
+	max-height: 65vh;
+	max-width: 65vw;
+}
+	
+img.andiwear2img {
+	max-height: 65vh;
+	max-width: 65vw;
+}
+	
+
+
+
+img.merkelimg {
+	max-height: 65vh;
+	max-width: 65vw;
+}
+
+img.truediggsimg {
+	max-height: 65vh;
+	max-width: 65vw;
+}
+
+img.sqigline {
+	max-height: 2vh;
+	max-width: 65vw;
+}
+
+
+
+.work-description1 {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: 800px;
+	font-size: 12vh;
+	font-size: 7vw;
+	color: #FFF1D0;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	
+}
+
+
+
+
+.lineTD {
+	color: #F0C808;
+	font-size: 80px;
+}
+
+.respcolor 
+
+{
+	color: #FF5A5F;
+}
+
+/*MEDIA QUERIES ----------------------------------------------------- */
+
+@media (min-width: 200px) {
+	
+.mainhead  {
+
+	font-size: 30vh;
+	font-size: 20vw;
+
+	
+}
+
+.description {
+	
+	font-size: 9vh;
+	font-size: 5vw; }
+
+.second-slide1 {
+
+	
+	font-size: 10vh;
+	position: absolute;
+	margin-top: 5vw;
+	margin-left: 10vw;
+}
+
+.bigrespon {
+
+	
+	font-size: 10vh;
+	position: absolute;
+	margin-top: 15vw;
+	margin-left: 10vw;
+}
+
+
+.bigrespon1 {
+
+	font-size: 5vh;
+
+	position: absolute;
+	margin-top: 15vw;
+	margin-left: 10vw;
+}
+
+
+
+#popper {
+	font-size: 12vh;
+	
+}
+	
+	.arrow {
+		display: none;
+	}
+
+	.uparrow {
+
+		display: none;}
+	
+	img.iphoneTD {
+		display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+	img.iphoneAndiwear1 {
+		display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+	img.iphoneAndiwear2 {
+		display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+	img.iphoneMerkel {
+		display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+	img.truediggsimg {
+		display: none;
+	}
+
+	img.andiwear1img {
+		display: none;
+	}
+	img.andiwear2img {
+		display: none;
+	}
+
+	img.merkelimg {
+		display: none;
+	}
+
+	img.ipadTD {
+		display: none;
+	
+	}
+
+	img.ipadAndiwear1 {
+	 	display: none;
+	
+	}
+
+	img.ipadAndiwear2 {
+	 	display: none;
+	
+	}
+
+
+
+	img.ipadMerkel {
+		display: none;
+	}
+
+
+ button.handbutton {
+ 	font-size: 3vw;
+ 	font-size: 3vh; 
+ 	
+ }
+
+.second-slide {
+	font-size: 7vw;
+
+}
+
+.second-slide {
+	font-size: 6vh;
+}
+
+.third-slide {
+	font-size: 8vh;
+	
+}
+
+.third-slide1 {
+	font-size: 7vh;
+}
+
+
+}
+
+
+
+
+
+@media(min-width: 768px) {
+
+	img.uparrow {
+		display: none;
+
+	}
+	 
+	 img.arrow {
+	 	display: none;
+	 }
+
+	 img.truediggsimg {
+		display: none;
+	}
+
+	img.andiwear1img {
+		display: none;
+	}
+	img.andiwear2img {
+		display: none;
+	}
+
+	img.iphoneAndiwear1 {
+		display: none;
+	
+	}
+
+	img.iphoneAndiwear2 {
+		display: none;
+	
+	}
+
+
+	img.merkelimg {
+		display: none;
+	}
+
+	img.iphoneTD {
+		display: none;
+	}
+
+	img.iphoneMerkel {
+		display: none;
+	}
+
+	.mainhead  {
+
+	font-size: 13vh;
+	font-size: 13vw;
+
+	
+}
+
+.description {
+	
+	font-size: 6vh;
+	font-size: 3vw; }
+
+
+
+
+
+	img.ipadTD {
+		display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+		img.ipadAndiwear1 {
+	 	display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	
+	}
+
+	img.ipadAndiwear2 {
+	 	display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	
+	}
+
+	img.ipadMerkel {
+		display: block;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+
+
+	   
+    }
+
+@media (max-height: 500px) {
+	.sqigline {
+		margin-top: -20px;
+	}
+}
+
+@media(min-width: 1000px) {
+
+	img.uparrow {
+		display: block;
+
+	}
+	 
+	 img.arrow {
+	 	display: block;
+	 }
+
+	 img.truediggsimg {
+		display: block;
+	}
+
+	img.merkelimg {
+		display: block;
+	}
+
+	img.andiwear1img {
+		display: block;
+	}
+
+	img.andiwear2img {
+		display: block;
+	}
+
+	img.iphoneTD {
+		display: none;
+	}
+
+	img.iphoneAndiwear1 {
+		display: none;
+		
+	}
+
+	img.iphoneAndiwear2 {
+		display: none;
+		
+	}
+
+	img.iphoneMerkel {
+		display: none;
+	}
+
+	img.ipadTD {
+		display: none;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+	img.ipadMerkel {
+		display: none;
+		max-height: 70vh;
+		max-width: 70vw;
+	}
+
+	img.ipadAndiwear1 {
+		display: none;
+
+	}
+
+	img.ipadAndiwear2 {
+		display: none;
+		
+	}
+
+
+	.mainhead  {
+
+	font-size: 10vh;
+	font-size: 10vw;
+
+	
+}
+
+.description {
+	
+	font-size: 6vh;
+	font-size: 3vw; }
+
+
+	   
+    }
+
+
+	
+
+	
+	
+
+
+
+
+/*CONTACT US PAGE --------------- ----------------------------------------------*/
+
+.handbutton1{
+      
+      background:transparent;
+      transition:all .5s ease;
+      color: white;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      
+      border-style: none; 
+   
+   
+      font-family: "amatic sc";
+  }
+
+
+div.lastpage {
+
+	
+  background-color: #F0C808;
+  margin: 0px;
+  padding: 0px;
+  height: 20vh;
+}
+
+
+.contactpagetext {
+	color: white;
+	font-size: 6.5vw;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+li.emailhidden {
+	display: block;
+	color: white;
+	font-size: 6.5vw;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+li.contacttext2 {
+	color: #DD1C1A;
+	font-size: 6.5vw;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+li.contacttext3 {
+	color: #086788;
+	font-size: 6.5vw;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+li.contacttext4 {
+	color: red;
+	font-size: 1.5vw;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+
+/* -------------------------------MODAL -----------------------------------*/
+
+
+
+/* Modal Content/Box */
+.modal {
+	max-height: 20w;
+	height: 20vw;
+	background-color: blue;
+}
+
+.contacttext1 {
+color: #086788;
+	font-size: 3.5vw;
+	font-family: 'Amatic SC', sans-serif;
+
+}
+
+/* The Close Button */
+.close {
+    color: #086788;
+    float: right;
+    font-size: 5vw;
+    font-weight: bold;
+    height: 5vw;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
