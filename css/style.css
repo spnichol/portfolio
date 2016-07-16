@@ -85,12 +85,14 @@ header#background {
 
 
 .description {
-	font-family: 'Droid Serif';
-    font-weight: 300;
-	text-transform:  uppercase;
-	color: #F2E9DC;
-	font-size: 4vh;
-	font-size: 2vw; }
+	 font-family: georgia, serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 32px;
+  text-transform: none;
+}
 
 /*ABOUTME ----------------------------------------------------------------------------- */	
 
@@ -133,13 +135,34 @@ header#background {
 	max-height: 250px;
 }
 
+.myworkthumbnail:hover {
+	max-height: 300px;
+}
+
+
+
+
 .thumbrowTop {
 	margin-top: 70px;
 }
 
 .thumbrowBottom {
-	margin-top: 70px;
+	margin-top: 70px
+	margin-bottom: 80px;
 }
+
+#thumb.button {
+     font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+	text-transform:  uppercase;
+	color: #FFF1D0;
+	font-size: 30px;
+	line-height: 51px;
+	padding: 10;
+	margin-top: 100px;
+	border-style: none;
+	box-shadow: none;
+  }
 
 #my_popup {
 	background-color: white;
