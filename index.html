@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Home page for portfolio of Steven Nichols">
+    <meta name="author" content="Steven Nichols">
 
 <!--STYLE SHEETS --> 
 
@@ -27,9 +27,11 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
 
 
 
@@ -52,7 +54,7 @@
 						<div class="col-sm-2 col-xs-3">
 							<a href="#aboutme"><button class="button handbutton" id="testbut">ABOUT ME</button></a></div>
 						<div class="col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset1">
-							<a href="#truediggs"><button class="button handbutton" id="hidebut">MY WORK</button></a></div>
+							<a href="MyWork.html"><button class="button handbutton" id="hidebut">MY WORK</button></a></div>
 						<div class="col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset1">
 							<a href="#contact"><button class="button handbutton">CONTACT ME</button></a></div>
 					
@@ -63,210 +65,6 @@
 
 <section id="aboutme">
 <div class="mastercont" id="mastercont">
-<div class="animation-cont" style="display: none;"  id="animcont">
-
-
-
-	<div class="first-slide" id="first" style="display: none;">I am <span id="roles1" style="display: none;"> a student</span> <span id="roles2" style="display: none;">a web developer</span><span id="roles3" style="display: none;">and an entrepreneur from Houston, Texas.</span></div></div>
-	<div class="bigbox1" style="display: none;") id="bigbox1">
-		<div class="second-slide" id="second" style="display: none;">I invite you to take a look at my work.</div> <br><div class="second-slide1" id="second-slide1" style="display: none;">I like to make responsive things that <span id="popper">POP</span>.</div>
-	</div>
-	<div class="bigbox2" style="display: none;") id="bigbox2">
-		<div class="third-slide" id="third" style="display: none;">Want to know more?</div>
-		<div class="third-slide1" id="third1" style="display: none">Click below to download my resumé.</div>
-		<a href="/img/CVStevenNichols.doc" download="personalpic"><img src="img/downloadcv.png" class="downloadcv"></a>
-		<div class="takemehome"><a href="#background" id="downloadlink"><img src="img/takemehome.png" class="homeimage"></a></div></div>
-	</div></div><!--mastercont-->
-	
-	
-	
-
-	</div></div>
-
-<script>
-$(document).ready(function(){
-    $("#testbut").click(function(){
-    	$("#mastercont").show("fast", function() {
-    	$("#animcont").show("fast", function() {
-        	$("#first").delay(1000).fadeIn("slow", function (){ 
-        	$("#roles1").delay(1000).fadeIn("fast", function() {
-       				$("#roles1").delay(1000).fadeOut("fast", function() {
-       					$("#roles2").fadeIn("fast", function() {
-       						$("#roles2").delay(1000).fadeOut("fast", function(){
-       							$("#roles3").fadeIn("fast", function(){
-       								$("#animcont").delay(3000).slideToggle(500, function () {
-       									$("#bigbox1").fadeIn("fast", function() {
-       									$("#second").delay(1000).fadeIn("fast", function() {
-       										$("#second-slide1").delay(2000).fadeIn("fast", function(){
-       											for (var i = 5; i >= 1; i--){
-
-               									$("#popper").fadeOut(100).fadeIn(200, function(){
-
-          })          							
-               									
-       											$("#bigbox1").delay(5000).fadeOut("fast", function(){
-       											$("#bigbox2").fadeIn("fast", function(){
-       												$("#third").fadeIn("fast", function(){
-       													$("#third1").delay(1000).fadeIn("fast", function(){
-
-       														
-												 
-												
-												})
-       													})
-       													})
-
-       												
-       											})
-
-       										
-       									
-       										
-       										};
-       									});
-       								
-       								});	
-       								});
-               						  });       
-       								
-       			     
-       							});
-       							
-       							})	  							
-       						});
-       						});
-       					});
-       				});
-      			
-        		}); 
-    	});
-    	}); 
-    });
-
-        		
-        
-   
-
-</script>
-
-
-<!--$("#roles3").delay(6000).fadeOut("fast");
-       								$("#first").delay(6000).fadeOut("fast", function() { 
-
-       								$("#animcont").delay(3000).slideToggle(500, function () { -->
-</section>
-
-<section id="1stsect">
-<div class="tdlanding" id="truediggs">
-		<div class="container-fluid">
-		<div class="row"> 
-
-			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
-				<div class="work-description1 text-center">TrueDiggs<span class="lineTD">|</span>.com
-				 </div></div></div><!--row-->
-		 <div class="row vertical-align">
-		 	<div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1">
-		 		<a href="#merkel"><img class="arrow" src="img/handyellow.png"></a></div>
-	 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				<img class="truediggsimg center-block" src="img/workex1.png">
-				<img class="iphoneTD center-block" src="img/iphoneTD.png">
-				<img class="ipadTD center-block" src="img/ipadTD.png">
-				</div><!--col-->
-			<div class="col-lg-1 col-md-1">
-		 		<a href="#base"><img class="uparrow" src="img/uphandyellow.png"></a></div></div>
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="sqigline center-block" src="img/sqigline.png"></div></div>
-		
-				</div></div>
-				</div></div></div></section>
-
-	 
-
-      
-	
-	<section id="3rdsection">
-	<div class="merkellanding" id="merkel">
-
-	<div class="container-fluid">
-		<div class="row">
-
-			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
-				<div class="work-description1 text-center">Merkel Tribute<span class="lineTD">|</span>Page
-				 </div></div></div><!--row-->
-		 <div class="row vertical-align">
-		 	<div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1">
-		 		<a href="#andiwear1"><img class="arrow" src="img/handyellow.png"></a></div>
-	 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				<img class="merkelimg center-block" src="img/workex2.png">
-				<img class="iphoneMerkel center-block" src="img/iphoneMerkel.png">
-				<img class="ipadMerkel center-block" src="img/ipadMerkel.png">
-				</div><!--col-->
-			<div class="col-lg-1 col-md-1">
-		 		<a href="#merkel"><img class="uparrow" src="img/uphandyellow.png"></a></div></div>
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="sqigline center-block" src="img/sqigline.png"></div></div>
-
-		 		</div><!--row--></div>
-	</div><!--container-fluid--></div></div></div></section>
-
-	<section id="4thsecton">
-	<div class="andiwear1landing" id="andiwear1">
-
-	<div class="container-fluid">
-		<div class="row">
-
-			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
-				<div class="work-description1 text-center">Andiwear<span class="lineTD">|</span>Landing Page
-				 </div></div></div><!--row-->
-		 <div class="row vertical-align">
-		 	<div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1">
-		 		<a href="#andiwear2"><img class="arrow" src="img/handyellow.png"></a></div>
-	 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				<img class="andiwear1img center-block" src="img/workex3.png">
-				<img class="iphoneAndiwear1 center-block" src="img/iphoneAndiwear1.png">
-				<img class="ipadAndiwear1 center-block" src="img/ipadAndiwear1.png">
-				</div><!--col-->
-			<div class="col-lg-1 col-md-1">
-		 		<a href="#andiwear1"><img class="uparrow" src="img/uphandyellow.png"></a></div></div>
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="sqigline center-block" src="img/sqigline.png"></div></div>
-
-		 		</div><!--row--></div>
-	</div><!--container-fluid--></div></div></div></section>
-
-	<section id="4thsection">
-	<div class="andiwear2landing" id="andiwear2">
-
-	<div class="container-fluid">
-		<div class="row">
-
-			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
-				<div class="work-description1 text-center">Andiwear<span class="lineTD">|</span>Schedule Page
-				 </div></div></div><!--row-->
-		 <div class="row vertical-align">
-		 	<div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1">
-		 		<a href="#contact"><img class="arrow" src="img/handyellow.png"></a></div>
-	 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				<img class="andiwear1img center-block" src="img/workex4.png">
-				<img class="iphoneAndiwear2 center-block" src="img/iphoneAndiwear2.png">
-				<img class="ipadAndiwear2 center-block" src="img/ipadAndiwear2.png">
-				</div><!--col-->
-			<div class="col-lg-1 col-md-1">
-		 		<a href="#andiwear1"><img class="uparrow" src="img/uphandyellow.png"></a></div></div>
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="sqigline center-block" src="img/sqigline.png"></div></div>
-
-		 		</div><!--row--></div>
-	</div><!--container-fluid--></div></div></div></section>
-
-
-
-
-
 
 
 
@@ -330,6 +128,11 @@ window.onclick = function(event) {
 
 </div></div></div>
 	
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/myworknav.js"></script>	
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
 
 </body>
+</section>
+</html>

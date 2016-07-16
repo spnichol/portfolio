@@ -3,8 +3,11 @@
 html, body {
 	width: 100%;
 	height: 100%;
+
  
 }
+
+
 
 header#background {
 
@@ -82,203 +85,81 @@ header#background {
 
 
 .description {
-	font-family: "andika", sans-serif;
+	font-family: 'Droid Serif';
+    font-weight: 300;
+	text-transform:  uppercase;
 	color: #F2E9DC;
 	font-size: 4vh;
 	font-size: 2vw; }
 
 /*ABOUTME ----------------------------------------------------------------------------- */	
-.mastercont {
-	background-color: white;
-	height: 100vh;
-	width: 100vw;
-	display: none;
-}
 
 
-.animation-cont {
-	background-color: #F06543;
-	height:100vh;
-	width: 100vw;
-	position: relative;
-	padding: 0;
-	margin: 0;
+/*MYWORK PAGE ----------------------------------------------------------------------------- */	
 
-}
-
-.first-slide {
-	color: #4CB944;
-	font-size: 10vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 22vw;
-	margin-left: 10vw;
-}
-
-.first-slide #roles1 {
-	color: #246EB9;
-}
-
-.first-slide #roles2 {
-	color: #F5EE9E;
-}
-
-.first-slide #roles3 {
-	color: #EEE5E9;
-}
-
-.second-slide {
-
-	color: #F5EE9E;
-	font-size: 10vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 27vw;
-	margin-left: 10vw;
-}
-
-
-.second-slide1 {
-
-	color: white;
-	font-size: 10vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 5vw;
-	margin-left: 10vw;
-}
-
-.bigrespon {
-
-	color: white;
-	font-size: 10vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 5vw;
-	margin-left: 10vw;
-}
-
-
-.bigrespon1 {
-
-	color: #DD1C1A;
-	font-size: 5vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 5vw;
-	margin-left: 10vw;
-}
-
-
-
-#popper {
-	font-size: 16vh;
-	color: #4CB944;
-}
-
-.third-slide {
-	color: #F06543;
-	font-size: 12vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 10vw;
-	margin-left: 10vw;
+.myworklanding {
+  
+  background-color: #DD1C1A; 
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
 
 }
 
-.third-slide1 {
-	color: #246EB9;
-	font-size: 10vh;
-	font-family: "amatic sc";
-	font-color: #06AED5;
-	text-transform: uppercase;
-	position: absolute;
-	margin-top: 22vw;
-	margin-left: 10vw;
-}
-
-
-.downloadcv {
-	position: absolute;
-	bottom: 5vw;
-	right: 15vw;
-	max-height: 25vh;
-	max-width: 25vw;
-}
-
-.homeimage {
-	position: absolute;
-	bottom: 5vw;
-	left: 5vw;
-	max-height: 25vh;
-	max-width: 25vw;
-}
-
-btn.cvbutton {
+.myworktitle  {
+	font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+	text-transform:  uppercase;
+	color: #FFF1D0;
+	font-size: 30px;
+	line-height: 51px;
+	margin-top: 10px;
 	
-      background:transparent;
-      padding:1rem 1rem;
-      margin:0 1rem;
-      transition:all .5s ease;
-      color: #246EB9;
-      font-size:2rem;
-      letter-spacing:1px;
-      outline:none;
-      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
-      border:solid 7px #41403E;
-      border-color: #F0C808;
-      font-family: "amatic sc";
-      position: inline-block;
+	
 }
 
-
-.bigbox1 {
-	background-color: #246EB9;
-	height:100vh;
-	width: 100vw;
-	position: relative;
-	padding: 0;
-	margin: 0;
-
+.myworkthumbnail {
+	max-height: 250px;
 }
 
-.bigbox2 {
-	background-color: #F0C808;
-	height: 100%;
-	width: 100%;
-	position: relative;
+.thumbrowTop {
+	margin-top: 70px;
 }
 
-.bigbox3 {
-	background-color: #086788;
-	height: 100%;
-	width: 100%;
-	position: relative;
+.thumbrowBottom {
+	margin-top: 70px;
 }
 
-.bigbox4 {
-	background-color: #DD1C1A;
-	height: 100%;
-	width: 100%;
-	position: relative;
-
+#my_popup {
+	background-color: white;
+	min-height: 95%;
+	min-width: 30%;
+	color: black;
 }
 
+.titletdpop {
+	font-size: 20px;
+	margin-top: 30px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-transform:  uppercase;
+}
 
-
+.my_popup_close {
+	
+	color: black;
+}
 
 /*PORTFOLIO PAGE ----------------------------------------------------------------------------- */	
 
@@ -288,19 +169,6 @@ section#portfolio {
 	
 }
 
-.arrow  {
-	max-height: 15vh;
-	max-width: 15vw;
-	
-}
-
-.uparrow  {
-	max-height: 15vh;
-	max-width: 15vw;
-	
-}
-
-
 
 .vertical-align {
     display: flex;
@@ -308,12 +176,38 @@ section#portfolio {
 }
 
 .tdlanding {
-	height: 100vh;
-	background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B51715 0%, #DD1C1A 100%); }
+	 background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #DD1C1A;}
 
-.andiwear1landing {
-	height: 100vh;
-	background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B51715 0%, #DD1C1A 100%);
+.yutlilanding {
+		 background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #DD1C1A;}
 }
 
 .andiwear2landing {
@@ -327,12 +221,12 @@ section#portfolio {
     background-image: -webkit-gradient(radial, left top, 0, left top, 572, color-stop(0, #086788), color-stop(100, #097399));
 }
 
-img.andiwear1img {
+img.desktopYutli {
 	max-height: 65vh;
 	max-width: 65vw;
 }
 	
-img.andiwear2img {
+img.desktopYutli2 {
 	max-height: 65vh;
 	max-width: 65vw;
 }
@@ -400,48 +294,9 @@ img.sqigline {
 	font-size: 9vh;
 	font-size: 5vw; }
 
-.second-slide1 {
-
-	
-	font-size: 10vh;
-	position: absolute;
-	margin-top: 5vw;
-	margin-left: 10vw;
-}
-
-.bigrespon {
-
-	
-	font-size: 10vh;
-	position: absolute;
-	margin-top: 15vw;
-	margin-left: 10vw;
-}
-
-
-.bigrespon1 {
-
-	font-size: 5vh;
-
-	position: absolute;
-	margin-top: 15vw;
-	margin-left: 10vw;
-}
-
-
-
-#popper {
-	font-size: 12vh;
-	
 }
 	
-	.arrow {
-		display: none;
-	}
-
-	.uparrow {
-
-		display: none;}
+	
 	
 	img.iphoneTD {
 		display: block;
@@ -449,13 +304,13 @@ img.sqigline {
 		max-width: 70vw;
 	}
 
-	img.iphoneAndiwear1 {
+	img.iphoneYutli {
 		display: block;
 		max-height: 70vh;
 		max-width: 70vw;
 	}
 
-	img.iphoneAndiwear2 {
+	img.iphoneYutli2 {
 		display: block;
 		max-height: 70vh;
 		max-width: 70vw;
@@ -467,18 +322,18 @@ img.sqigline {
 		max-width: 70vw;
 	}
 
-	img.truediggsimg {
+	img.desktopTD {
 		display: none;
 	}
 
-	img.andiwear1img {
+	img.desktopYutli {
 		display: none;
 	}
-	img.andiwear2img {
+	img.desktopYutli2 {
 		display: none;
 	}
 
-	img.merkelimg {
+	img.desktopMerkel {
 		display: none;
 	}
 
@@ -487,12 +342,12 @@ img.sqigline {
 	
 	}
 
-	img.ipadAndiwear1 {
+	img.ipadYutli {
 	 	display: none;
 	
 	}
 
-	img.ipadAndiwear2 {
+	img.ipadYutli2 {
 	 	display: none;
 	
 	}
@@ -510,23 +365,7 @@ img.sqigline {
  	
  }
 
-.second-slide {
-	font-size: 7vw;
 
-}
-
-.second-slide {
-	font-size: 6vh;
-}
-
-.third-slide {
-	font-size: 8vh;
-	
-}
-
-.third-slide1 {
-	font-size: 7vh;
-}
 
 
 }
@@ -537,23 +376,16 @@ img.sqigline {
 
 @media(min-width: 768px) {
 
-	img.uparrow {
-		display: none;
+	
 
-	}
-	 
-	 img.arrow {
-	 	display: none;
-	 }
-
-	 img.truediggsimg {
+	 img.desktopTD {
 		display: none;
 	}
 
-	img.andiwear1img {
+	img.desktopYutli {
 		display: none;
 	}
-	img.andiwear2img {
+	img.desktopYutli2 {
 		display: none;
 	}
 
@@ -562,13 +394,13 @@ img.sqigline {
 	
 	}
 
-	img.iphoneAndiwear2 {
+	img.iphoneYutli2 {
 		display: none;
 	
 	}
 
 
-	img.merkelimg {
+	img.desktopMerkel {
 		display: none;
 	}
 
@@ -603,14 +435,14 @@ img.sqigline {
 		max-width: 70vw;
 	}
 
-		img.ipadAndiwear1 {
+		img.ipadYutli {
 	 	display: block;
 		max-height: 70vh;
 		max-width: 70vw;
 	
 	}
 
-	img.ipadAndiwear2 {
+	img.ipadYutli2 {
 	 	display: block;
 		max-height: 70vh;
 		max-width: 70vw;
@@ -636,28 +468,21 @@ img.sqigline {
 
 @media(min-width: 1000px) {
 
-	img.uparrow {
-		display: block;
 
-	}
-	 
-	 img.arrow {
-	 	display: block;
-	 }
 
-	 img.truediggsimg {
+	 img.desktopTD {
 		display: block;
 	}
 
-	img.merkelimg {
+	img.desktopMerkel {
 		display: block;
 	}
 
-	img.andiwear1img {
+	img.desktopYutli {
 		display: block;
 	}
 
-	img.andiwear2img {
+	img.desktopYutli2 {
 		display: block;
 	}
 
@@ -665,12 +490,12 @@ img.sqigline {
 		display: none;
 	}
 
-	img.iphoneAndiwear1 {
+	img.iphoneYutli {
 		display: none;
 		
 	}
 
-	img.iphoneAndiwear2 {
+	img.iphoneYutli2 {
 		display: none;
 		
 	}
@@ -691,12 +516,12 @@ img.sqigline {
 		max-width: 70vw;
 	}
 
-	img.ipadAndiwear1 {
+	img.ipadYutli {
 		display: none;
 
 	}
 
-	img.ipadAndiwear2 {
+	img.ipadYutli2 {
 		display: none;
 		
 	}
@@ -704,16 +529,16 @@ img.sqigline {
 
 	.mainhead  {
 
-	font-size: 10vh;
-	font-size: 10vw;
+	font-size: 120px;
+
 
 	
 }
 
 .description {
 	
-	font-size: 6vh;
-	font-size: 3vw; }
+
+	font-size: 40px; }
 
 
 	   
