@@ -56,6 +56,7 @@ header#background {
       border:solid 7px #41403E;
       border-color: #F0C808;
       font-family: "amatic sc";
+      
   }
 
 
@@ -101,7 +102,7 @@ header#background {
 
 .myworklanding {
   
-  background-color: #DD1C1A; 
+  background-color: #9FB1BC; 
   background-position: center center;
   
   /* Background image doesn't tile */
@@ -116,29 +117,85 @@ header#background {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
+  overflow: hidden;
 
 }
 
-.myworktitle  {
-	font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-	text-transform:  uppercase;
-	color: #FFF1D0;
-	font-size: 30px;
-	line-height: 51px;
-	margin-top: 10px;
-	
-	
-}
+
+
+.worklandingbuts {
+    
+      background:transparent;
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-top: 4px;
+      transition:all .5s ease;
+      color: white;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #41403E;
+      border-color: white;
+      border-width: 2px;
+      font-family: "Oswald";
+      display: inline;
+      
+  }
+
+  
+
+
 
 .myworkthumbnail {
-	max-height: 251px;
+	max-width: 400px;
 }
 
-.myworkthumbnail:hover {
-	max-height: 300px;
+
+
+.thumbdescrip  {
+	display: block-inline;
+	color: white;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: -20px;
+	font-family: 'Oswald', sans-serif;
 }
 
+.thumbdescrip ul {
+
+		border-bottom: 1px solid;
+	border-bottom-width: 70%;
+	padding-bottom: 15px;
+
+
+
+}
+
+.lessbold {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+}
+
+.myworklist  {
+	font-size: 18px;
+	margin-top: -5px;
+	
+}
+
+.myworklist ul li {
+	text-align: left;
+	overflow: hidden;
+}
+
+.myworklist li {
+	margin-top: 2px;
+}
+
+img.landingarrow {
+	max-height: 20px;
+}
 
 
 
@@ -147,7 +204,7 @@ header#background {
 }
 
 .thumbrowBottom {
-	margin-top: 70px
+	margin-top: 100px;
 	margin-bottom: 80px;
 }
 
@@ -164,25 +221,39 @@ header#background {
 	box-shadow: none;
   }
 
-#my_popup {
-	background-color: white;
-	min-height: 95%;
-	min-width: 30%;
-	color: black;
+
+
+.titlelanding {
+	font-size: 30px;
+	font-family: "Oswald";
+	color: white;
+	margin-top: 0px;
 }
 
-.titletdpop {
-	font-size: 20px;
-	margin-top: 30px;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 700;
-	text-transform:  uppercase;
-}
+  .myworkpagesbuts {
+    
+      background-color: red;
+      padding-left: 2px;
+      padding-right: 2px;
+     
+      transition:all .5s ease;
+      color: white;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #41403E;
+      border-color: #F0C808;
+      border-width: 2px;
+      font-family: "amatic sc";
+      display: block;
+      
+  }
 
-.my_popup_close {
-	
-	color: black;
-}
+
+  
+
 
 /*PORTFOLIO PAGE ----------------------------------------------------------------------------- */	
 
@@ -213,7 +284,13 @@ section#portfolio {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #DD1C1A;}
+  background-color: #DD1C1A;
+  overflow: hidden; 
+}
+
+/* YUTLI** */ 
+
+
 
 .yutlilanding {
 		 background-position: center center;
@@ -230,14 +307,180 @@ section#portfolio {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #DD1C1A;}
+  background-color: #2E5266;
+  display: none;
+}
+.yutlianimshow {
+		 background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #DD1C1A;
+display: block;
 }
 
-.andiwear2landing {
-	height: 100vh;
-	background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B51715 0%, #DD1C1A 100%);
+/* QUOTE** */
+
+.quotelanding {
+		 background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #2E5266;
+  display: none;
+}
+.quoteanimshow {
+		 background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #DD1C1A;
+  display: block;
+
 }
 
+div.quoteImages {
+	display: inline-block;
+	width: ;
+	
+}
+
+
+
+div.infoblock{
+	background-color: white;
+	float: right;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+	 font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+	text-transform:  uppercase;
+	display: inline-block;
+	position: absolute;
+
+
+}
+
+ul.information {
+	color: black;
+}
+
+
+
+
+
+/* ------MODAL FOR quotePage ------- */
+
+.remodal {
+min-height: 700px;
+min-width: 900px;
+
+
+}
+
+.titlemodal {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: 800px;
+    font-size: 60px;
+	color: #466A7F;
+	text-transform: uppercase;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.modaldescription {
+	font-family: "Oswald", serif;
+	size: 1em;
+	font-weight: 400;
+	margin-bottom: 200px;
+}
+
+.modalexit{
+       background:transparent;
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-top: 4px;
+      transition:all .5s ease;
+      color: #FFBEBF;
+      font-size:4rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #41403E;
+      border-color: #FFBEBF;
+      border-width: 2px;
+      font-family: "amatic sc";
+      font-weight: 700;
+  }
+
+  .modalnext {
+      background:transparent;
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-top: 4px;
+      margin-left: 5px;
+      transition:all .5s ease;
+      color: #444C99;
+      font-size:4rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #444C99;
+      border-color: #444C99;
+      border-width: 2px;
+      font-family: "amatic sc";
+      font-weight: 700;
+      
+  }
+
+  img.modalicons {
+  	margin-top: 20px;
+  	padding: 10px;
+  	position: absolute;
+  }
+
+  
+
+
+.ipadModalQuote {
+
+
+}
+
+/* ----------- NEND MODAL FOR quotePAGE ------------------ */
 
 .merkellanding {
 	height: 100vh;
@@ -245,8 +488,7 @@ section#portfolio {
 }
 
 img.desktopYutli {
-	max-height: 65vh;
-	max-width: 65vw;
+	width: 50vw;
 }
 	
 img.desktopYutli2 {
@@ -267,9 +509,16 @@ img.truediggsimg {
 	max-width: 65vw;
 }
 
+div.line {
+	display: flex;
+	width: 100%;
+	transition: all 1s;
+}
+
+
+
 img.sqigline {
-	max-height: 2vh;
-	max-width: 65vw;
+	display: block-inline;
 }
 
 
@@ -277,13 +526,11 @@ img.sqigline {
 .work-description1 {
 	font-family: 'Amatic SC', sans-serif; 
 	font-weight: 800px;
-	font-size: 12vh;
-	font-size: 7vw;
+    font-size: 80px;
 	color: #FFF1D0;
 	text-transform: uppercase;
 	padding: 0;
-	margin: 0;
-	
+	margin-top: -60px;
 }
 
 
@@ -304,45 +551,46 @@ img.sqigline {
 
 @media (min-width: 200px) {
 	
+.thumbrowTop {
+	
+}
+.thumbrowBottom {
+
+	
+}
 .mainhead  {
 
-	font-size: 30vh;
-	font-size: 20vw;
+	
 
 	
 }
 
 .description {
 	
-	font-size: 9vh;
-	font-size: 5vw; }
+ }
 
-}
+
 	
 	
 	
 	img.iphoneTD {
-		display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+		display: ;
+		
 	}
 
 	img.iphoneYutli {
-		display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+		display: ;
+	
 	}
 
 	img.iphoneYutli2 {
-		display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+		display: ;
+	
 	}
 
 	img.iphoneMerkel {
-		display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+		display: ;
+	
 	}
 
 	img.desktopTD {
@@ -383,8 +631,7 @@ img.sqigline {
 
 
  button.handbutton {
- 	font-size: 3vw;
- 	font-size: 3vh; 
+ 	
  	
  }
 
@@ -437,45 +684,41 @@ img.sqigline {
 
 	.mainhead  {
 
-	font-size: 13vh;
-	font-size: 13vw;
+	
+	font-size: ;
 
 	
 }
 
 .description {
 	
-	font-size: 6vh;
-	font-size: 3vw; }
+	font-size: ;
+	 }
 
 
 
 
 
 	img.ipadTD {
-		display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+		display: ;
+		
 	}
 
 		img.ipadYutli {
-	 	display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+	 	display: ;
+		
 	
 	}
 
 	img.ipadYutli2 {
-	 	display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+	 	display: ;
+		
 	
 	}
 
 	img.ipadMerkel {
-		display: block;
-		max-height: 70vh;
-		max-width: 70vw;
+		display: ;
+		
 	}
 
 
@@ -483,11 +726,15 @@ img.sqigline {
 	   
     }
 
+/*--------------------------- JUST FOR SQUIGLINE-------------------------- */
+
 @media (max-height: 500px) {
 	.sqigline {
 		margin-top: -20px;
 	}
 }
+
+/*------------------------ FOR MORE COMPUTERS------------------------------ */
 
 @media(min-width: 1000px) {
 
@@ -529,14 +776,12 @@ img.sqigline {
 
 	img.ipadTD {
 		display: none;
-		max-height: 70vh;
-		max-width: 70vw;
+	
 	}
 
 	img.ipadMerkel {
 		display: none;
-		max-height: 70vh;
-		max-width: 70vw;
+
 	}
 
 	img.ipadYutli {
