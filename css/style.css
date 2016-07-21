@@ -95,10 +95,74 @@ header#background {
   text-transform: none;
 }
 
-/*ABOUTME ----------------------------------------------------------------------------- */	
+/*NAv ----------------------------------------------------------------------------- */	
+.icon-bar{
+	color: white;
+}
 
+img.logo {
+	max-height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-style: none; }
+
+}
+
+div.logoname {
+	 font-family: "amatic sc";
+}
+
+
+
+.navbar ul {
+	      margin-right: 60px;
+
+}
+
+.navbar ul li  {
+	 
+	 background:transparent;
+      
+   	  margin-top: 8px;
+      transition:all .5s ease;
+      color: white;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+      border:solid 7px #41403E;
+      border-color: white;
+      border-width: 2px;
+      font-family: "amatic sc";
+      display: inline;
+      margin-left: 10px;
+
+
+
+}
+
+.navbar li a {
+	color: white;
+}
+
+.navbar li.active a {
+	background-color: #CCCB98;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+
+}
+
+.navbar ul li a:hover {
+	background-color: #466A7F;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+	
+
+}
 
 /*MYWORK PAGE ----------------------------------------------------------------------------- */	
+
 
 .myworklanding {
   
@@ -128,7 +192,7 @@ header#background {
       background:transparent;
       padding-left: 2px;
       padding-right: 2px;
-      margin-top: 4px;
+   
       transition:all .5s ease;
       color: white;
       font-size:2rem;
@@ -139,35 +203,59 @@ header#background {
       border:solid 7px #41403E;
       border-color: white;
       border-width: 2px;
-      font-family: "Oswald";
+      font-family: "amatic sc";
       display: inline;
       
   }
 
-  
 
 
 
-.myworkthumbnail {
-	max-width: 400px;
+img.myworkthumbnail {
+	display: inline-block; 
+	margin-top: 50px;
 }
 
-
-
-.thumbdescrip  {
+.thumbdescrip {
 	display: block-inline;
 	color: white;
 	padding-left: 50px;
 	padding-right: 50px;
-	margin-top: -20px;
+	padding-bottom: 15px;
+	margin-bottom: 40px;
+
 	font-family: 'Oswald', sans-serif;
+
 }
 
-.thumbdescrip ul {
+.rowbreakline {
+	display: inline-block;
+}
 
-		border-bottom: 1px solid;
+.thumbdescrip h1 {
+
+    font-family: "amatic sc";
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.thumbdescrip h2  {
+	font-weight: 400;
+	align: left;
+	font-size: 1.5em;
+	margin-bottom: 25px;
+	border-bottom: 1px solid;
 	border-bottom-width: 70%;
-	padding-bottom: 15px;
+	display: inline;
+}
+
+.thumbdescrip p {
+	align: left;
+	font-weight: 400;
+	font-style: normal;
+	margin-top: 25px;
+
+
 
 
 
@@ -204,7 +292,7 @@ img.landingarrow {
 }
 
 .thumbrowBottom {
-	margin-top: 100px;
+
 	margin-bottom: 80px;
 }
 
@@ -248,11 +336,64 @@ img.landingarrow {
       border-width: 2px;
       font-family: "amatic sc";
       display: block;
-      
+   
+
   }
 
 
+  /*FOOTER--------------------------------------------------------------------------------------------------*/
+
+
+
+div.endpage {
+	padding-bottom: 20px;
+	padding-top: 20px;
+  	background-color: #CCCB98;
+  	height: 35px;
+  	max-height: 35px;
+  	width: 100%;
+  	display: inline-block;
+  	font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+	text-transform:  uppercase;
+	color: #FFF1D0;
+	text-align: left;
+	font-size: 15px;
+	position: absolute;
+	bottom: 0px;
+
+
+}
+
+
+  .lowerrow {
   
+  }
+
+
+
+  .uparrow {
+  	max-height: 40px;
+  	 -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 50%;
+  
+
+  }
+
+
+ @keyframes example {
+    0%   {bottom:8px;}
+    25%  {bottom:7px;}
+    50%  {bottom:6px;}
+    75%  {bottom:7px;}
+    100% {bottom:8px;}
+} 
 
 
 /*PORTFOLIO PAGE ----------------------------------------------------------------------------- */	
@@ -480,72 +621,7 @@ min-width: 900px;
 
 }
 
-/* ----------- NEND MODAL FOR quotePAGE ------------------ */
 
-.merkellanding {
-	height: 100vh;
-    background-image: -webkit-gradient(radial, left top, 0, left top, 572, color-stop(0, #086788), color-stop(100, #097399));
-}
-
-img.desktopYutli {
-	width: 50vw;
-}
-	
-img.desktopYutli2 {
-	max-height: 65vh;
-	max-width: 65vw;
-}
-	
-
-
-
-img.merkelimg {
-	max-height: 65vh;
-	max-width: 65vw;
-}
-
-img.truediggsimg {
-	max-height: 65vh;
-	max-width: 65vw;
-}
-
-div.line {
-	display: flex;
-	width: 100%;
-	transition: all 1s;
-}
-
-
-
-img.sqigline {
-	display: block-inline;
-}
-
-
-
-.work-description1 {
-	font-family: 'Amatic SC', sans-serif; 
-	font-weight: 800px;
-    font-size: 80px;
-	color: #FFF1D0;
-	text-transform: uppercase;
-	padding: 0;
-	margin-top: -60px;
-}
-
-
-
-
-.lineTD {
-	color: #F0C808;
-	font-size: 80px;
-}
-
-.respcolor 
-
-{
-	color: #FF5A5F;
-}
 
 /*MEDIA QUERIES ----------------------------------------------------- */
 
@@ -740,59 +816,7 @@ img.sqigline {
 
 
 
-	 img.desktopTD {
-		display: block;
-	}
-
-	img.desktopMerkel {
-		display: block;
-	}
-
-	img.desktopYutli {
-		display: block;
-	}
-
-	img.desktopYutli2 {
-		display: block;
-	}
-
-	img.iphoneTD {
-		display: none;
-	}
-
-	img.iphoneYutli {
-		display: none;
-		
-	}
-
-	img.iphoneYutli2 {
-		display: none;
-		
-	}
-
-	img.iphoneMerkel {
-		display: none;
-	}
-
-	img.ipadTD {
-		display: none;
 	
-	}
-
-	img.ipadMerkel {
-		display: none;
-
-	}
-
-	img.ipadYutli {
-		display: none;
-
-	}
-
-	img.ipadYutli2 {
-		display: none;
-		
-	}
 
 
 	.mainhead  {

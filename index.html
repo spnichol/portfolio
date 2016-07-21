@@ -6,32 +6,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Home page for portfolio of Steven Nichols">
+    <meta name="description" content="Homepage for portfolio of Steven Nichols">
     <meta name="author" content="Steven Nichols">
 
 <!--STYLE SHEETS --> 
 
 <link href="css/style.css" rel='stylesheet' type='text/css'>
 <link href="css/animate.css" rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="node_modules/remodal/dist/remodal.css">
+<link rel="stylesheet" href="node_modules/remodal/dist/remodal-default-theme.css">
 
 
 <!--FONTS-->
 
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
-<link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 
 
 
 
+</head>
 
 
 
@@ -42,21 +39,37 @@
 
 
 
+
+
+
 <section id="base">
 <header id="background">
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar">----</span>
+        <span class="icon-bar">----</span>
+        <span class="icon-bar">----</span> 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><button class="worklandingbuts" href="index.html">HOME</button></a></li>
+        <li><a href="#"><button class="worklandingbuts" href="index.html">ABOUT ME</button></a></li>
+        <li><a href="MyWork.html"><button class="worklandingbuts">PROJECTS</button></a></li> 
+        <li><a href="#"><button class="worklandingbuts" href="index.html">CONTACT</button></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
 		<div class="titles">
 
 			<div class="mainhead" id="myname">steven nichols</div>
 		<div class="description">Web Developer <span class="line">|</span> Entrepreneur</div></div> 
-			<div class="container custnav">
-				<div class="border">
-					<div class="row">
-						<div class="col-sm-2 col-xs-3">
-							<a href="#aboutme"><button class="button handbutton" id="testbut">ABOUT ME</button></a></div>
-						<div class="col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset1">
-							<a href="MyWork.html"><button class="button handbutton" id="hidebut">MY WORK</button></a></div>
-						<div class="col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset1">
-							<a href="#contact"><button class="button handbutton">CONTACT ME</button></a></div>
 					
 			</div></div></div></div></div></section>
 
@@ -75,10 +88,14 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<button class="handbutton1 center-block" id="myBtn"><div class="contactpagetext text-center">CONTACT</div></button></div></div></div>
-	<!-- The Modal -->
+
+
+<!--
+
+
 <div id="myModal" class="modal">
 
-  <!-- Modal content -->
+
   <div class="modal-content">
   	<div class="row">
 	<div class="col-sm-8">
@@ -91,46 +108,18 @@
 
 
 
-
-    <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-</script>
-
-
-
+-->
 
 </div></div>
 
 </div></div></div>
 	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+<script type="text/javascript" src="node_modules/remodal/dist/remodal.min.js"></script>
+<script type="text/javascript" src="js/myworknav.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+
 
 
 </body>
