@@ -42,36 +42,43 @@
 
 
 
-<section id="base">
+
 <header id="background">
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar">----</span>
-        <span class="icon-bar">----</span>
-        <span class="icon-bar">----</span> 
-      </button>
+     <span><img class="mobilemenu" style="height: 40px; max-height: 20px;" src="img/mobilemenu.png"></span>
+ </button>
+  <img class="mobilelogo" style="height: 70px; max-height: 70px; margin-top: 10px;" src="img/circleman.png">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html"><button class="worklandingbuts" href="index.html">HOME</button></a></li>
-        <li><a href="#"><button class="worklandingbuts" href="index.html">ABOUT ME</button></a></li>
-        <li><a href="MyWork.html"><button class="worklandingbuts">PROJECTS</button></a></li> 
-        <li><a href="#"><button class="worklandingbuts" href="index.html">CONTACT</button></a></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
+
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="AboutMe.html">ABOUT ME</a></li>
+        <li><a href="MyWork.html">PROJECTS</a></li> 
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-left">
+      <img class="logo" src="img/circleman.png">
       </ul>
     </div>
   </div>
 </nav>
 
-		<div class="titles">
-
-			<div class="mainhead" id="myname">steven nichols</div>
-		<div class="description">Web Developer <span class="line">|</span> Entrepreneur</div></div> 
+		
+      <div class="row">
+      <div class="col-xs-12">
+			<div class="mainhead text-center" id="myname">steven <span class="lastname">nichols</span></div>
+		<div class="description text-center">Web Developer <span class="line">|</span> Entrepreneur</div></div> 
 					
-			</div></div></div></div></div></section>
+			</div><!--mainhead --> </div> <!--description --> </div><!--col --> </div><!--row-->
+      <div class="row">
+      <div class="col-xs-12">
+      <div class="executive text-center"><img src="img/executive.png"><h3>Click to take the executive tour</h3><h2>(Think: "hands-free")</div><!--executive-->
+
+ </div><!--col --> </div><!--row -->    </div><!--container-fluid-->
 
 	
 </header>
@@ -119,9 +126,10 @@
 <script type="text/javascript" src="node_modules/remodal/dist/remodal.min.js"></script>
 <script type="text/javascript" src="js/myworknav.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/hint.js"></script>
+
 
 
 
 </body>
-</section>
 </html>

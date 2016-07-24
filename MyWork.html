@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Home page for portfolio of Steven Nichols">
     <meta name="author" content="Steven Nichols">
+    <meta name='B-verify' content='7831207e8a722ee070be3f0dca8b881c3893a791' />
 
 <!--STYLE SHEETS --> 
 
@@ -39,17 +40,16 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
+     <span><img class="mobilemenu" style="height: 40px; max-height: 20px;" src="img/mobilemenu.png"></span>
+ </button>
+  <img class="mobilelogo" style="height: 70px; max-height: 70px; margin-top: 10px;" src="img/circleman.png">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
 
-        <li class="active"><a href="index.html">HOME</a></li>
-        <li><a href="#">ABOUT ME</a></li>
-        <li><a href="index.html">PROJECTS</a></li> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="AboutMe.html">ABOUT ME</a></li>
+        <li class="active"><a href="MyWork.html">PROJECTS</a></li> 
         <li><a href="#">CONTACT</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-left">
@@ -59,14 +59,28 @@
   </div>
 </nav>
 
+<div id="hint" class="hintman">
+<div class="row">
+	<div class="col-xs-6">
+		<img class="whitelogoman" src="img/whitelogoman.png"></div>
+	<div class="col-xs-6">
+	<div class="row">
+		<h2 class="text-center">HINT!</h2>
+				<h3>Click thumbnails for more info and a larger view.</h3></div></div></div></div>
+
+
+
 
 
 
 
 <!--mycustomnav -->
 
+<div class="container">
+
+
 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-			<img class="myworkthumbnail center-block img-responsive" id="yutlipage" src="img/desktopYutli.png" onclick="yutliAnim();">
+			<a href="#yutlimodal"><img class="myworkthumbnail center-block img-responsive" id="yutlipage" src="img/desktopYutli.png"></a>
 				<div class="thumbdescrip center-block">
 				<h1 class="text-center">Yutli</h1>
 				<h2>Mock-up for TrueDiggs, LLC</h2>
@@ -85,30 +99,26 @@
 
 
 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-	<img class="myworkthumbnail center-block img-responsive" src="img/desktopWeather.png">
+	<a href="#weathermodal"><img class="myworkthumbnail center-block img-responsive" src="img/desktopWeather.png"></a>
 				<div class="thumbdescrip center-block">
 					<h1 class="text-center">Weather App</h1>
 					<h2>Certification Project</h2>
-					<p>This FCC project uses the OpenWeatherMap API to display the current temperature, along with an image to represent the conditions. I designed and developed the UI, and also created the GIFs in Adobe Photoshop.</p>
-
-</div><!--thumbdescrip--></div><!--column --> 
+					<p>This web application was created as project for my front-end certification from FreeCodeCamp.com (FCC). I designed and developed the UI, while the quotes are actually hand-picked and stored in a JSON file.</p>
 
 
-<div class="lowerrow">
-<div class="col-md-12 col-lg-12">
-				<img class="rowbreakline center-block" src="img/rowbreakline.png"></div>
-		
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-				<img class="myworkthumbnail center-block img-responsive" id="TDthumb" src="img/desktopTD.png" onclick="yutliAnim();">
-					<div class="thumbdescrip center-block">
-						<h1 class="text-center">Yutli</h1>
-						<h2>Live Website for TrueDiggs, LLC</h2>
-						<p>This is a hand-coded mock-up for Yutli, a web application for sharing children's clothing. It features customized and original artwork that I created using the Adobe Suite.</p>
+</div><!--thumbdescrip--></div><!-- column -->
+
+<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+			<a href="#tdmodal"><img class="myworkthumbnail center-block img-responsive" id="yutlipage" src="img/desktopTD.png"></a>
+				<div class="thumbdescrip center-block">
+				<h1 class="text-center">TrueDiggs.com</h1>
+				<h2>Website for TrueDiggs, LLC</h2>
+				<p>TrueDiggs.com is a website that allows users to leave feedback about landlords in Brooklyn. I worked as the founder and project manager for this project.</p>
 
 </div><!--thumbdescrip--></div><!--column -->
 
 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-	<a href="#quotemodal"><img class="myworkthumbnail center-block img-responsive" id="merkelthumb" src="img/desktopMerkel.png"></a>
+	<a href="#merkelmodal"><img class="myworkthumbnail center-block img-responsive" id="merkelthumb" src="img/desktopMerkel.png"></a>
 				<div class="thumbdescrip center-block">
 					<h1 class="text-center">Merkel Tribute</h1>
 					<h2>Certification Project</h2>
@@ -118,116 +128,185 @@
 
 
 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-	<img class="myworkthumbnail center-block img-responsive" id="yutlithumb2" src="img/desktopYutli2.png">
+	<a href="#yutlisimplemodal"><img class="myworkthumbnail center-block img-responsive" id="yutlithumb2" src="img/desktopYutli2.png">
 				<div class="thumbdescrip center-block">
 					<h1 class="text-center">Yutli (Simple)</h1>
 					<h2>Mock-up for TrueDiggs, LLC</h2>
 					<p>This is another hand-coded mock-up for Yutli. This one takes a simpler approach, putting the call to action front and center.</p>
 
-</div><!--thumbdescrip--></div><!--column --> </div><!--LOWER ROW FOR MEDIUM AND LARGE SCREENS ONLY --></div>
-<div class=col-xs-12>
-	<a href="#mywork"><img class="uparrow center-block" src=img/uparrow.png></a></div>
-<div class="endpage">CREATED BY SPNDEV
-</div><!--footer-->
+</div><!--thumbdescrip--></div><!--column --> </div>
+
+<div class="col-xs-12">
+<a href="#mywork"><img class="uparrow center-block" src="img/uparrow.png"></div></a>
+</div><!--conainer-->
+
 </div><!--containerfluid--></div><!--myworklanding--></main>
 
 <div class="remodal-bg">
 </div>
-<div class="remodal" data-remodal-id="quotemodal">
+<div class="remodal img-reponsive" data-remodal-id="yutlimodal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <div class="container-fluid">
  <div class="row">
-		<div class="col-sm-6">
-			<img class="ipadModalQuote img-responsive" src="img/ipadQuote.png">
+		<div class="col-xs-6">
+			<img class="modalimage img-responsive" src="img/ipadYutli.png" id="yutlitoggle">
 			<div class="modalicons center-block">
 			<div class="row">
-				
-					<a href=""><img class="laptopicon" src="img/device-desktop.svg"></a>
-				
-					<a href=""><img class="phoneicon" src="img/device-mobile.svg"></a>
+				<div class="col-xs-12">
+	
 					
-					<a href=""><img class="githubicon" src="img/mark-github.svg"></a>
-					</div></div>
+					
+					</div></div></div>
+			</div>
+				<div class="col-sm-5 col-lg-offset-1">
+					<div class="titlemodal" id="titlequote">Yutli</div>
+						<p class="modaldescription">This is a hand-coded mock-up for Yutli, a web application for sharing children's clothing. It features customized and original artwork that I created using the Adobe Suite.</p>
+							<a href="#yutlisimplemodal"><button class="modalexit">Back</button></a>
+  							<a href="#quotemodal"><button class="modalexit">Next</button></a>
+					</div></div></div>
+  
+</div>
+
+<div class="remodal-bg">
+</div>
+<div class="remodal img-reponsive" data-remodal-id="quotemodal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="container-fluid" id="quotemodal">
+ <div class="row">
+		<div class="col-xs-6">
+			<img class="modalimage img-responsive" src="img/ipadQuote.png">
+			<div class="modalicons center-block">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href=""><img class="modalicons" src="img/modal_viewlive.png"></a>
+					<a href=""><img class="modalicons" src="img/modal_github.png"></a>
+					
+					
+					</div></div></div>
 			</div>
 				<div class="col-sm-5 col-lg-offset-1">
 					<div class="titlemodal" id="titlequote">Quote Machine</div>
-						<p class="modaldescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							<button data-remodal-action="cancel" class="modalexit">Exit</button>
-  							<button data-remodal-action="confirm" class="modalnext">Next</button>
+						<p class="modaldescription">This web application was created as project for my front-end certification from FreeCodeCamp.com (FCC). I designed and developed the UI, while the quotes are actually hand-picked and stored in a JSON file.</p>
+							<a href="#yutlimodal"><button class="modalexit">Back</button></a>
+  							<a href="#weathermodal"><button class="modalexit">Next</button></a>
+					</div></div></div>
+  
+</div>
+
+<div class="remodal-bg">
+</div>
+<div class="remodal img-reponsive" data-remodal-id="weathermodal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="container-fluid" id="weathermodal">
+ <div class="row">
+		<div class="col-xs-6">
+			<img class="modalimage img-responsive" src="img/ipadWeather.png">
+			<div class="modalicons center-block">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="https://spnichol.github.io/weather/"><img class="modalicons" src="img/modal_viewlive.png"></a>
+					<a href="https://github.com/spnichol/weather"><img class="modalicons" src="img/modal_github.png"></a>
+					
+					
+					</div></div></div>
+			</div>
+				<div class="col-sm-5 col-lg-offset-1">
+					<div class="titlemodal" id="titlequote">Weather App</div>
+						<p class="modaldescription">This web application was created as project for my front-end certification from FreeCodeCamp.com (FCC). I designed and developed the UI, while the quotes are actually hand-picked and stored in a JSON file.</p>
+							<a href="#quotemodal"><button class="modalexit">Back</button></a>
+  							<a href="#tdmodal"><button class="modalexit">Next</button></a>
 					</div></div></div>
   
 </div>
 
 
+<div class="remodal-bg">
+</div>
+<div class="remodal img-reponsive" data-remodal-id="tdmodal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="container-fluid" id="tdmodal">
+ <div class="row">
+		<div class="col-xs-6">
+			<img class="modalimage img-responsive" src="img/ipadTD.png">
+			<div class="modalicons center-block">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="https://www.truediggs.com"><img class="modalicons" src="img/modal_viewlive.png"></a>
+					<a href="#"><img class="modalicons" src="img/modal_github.png"></a>
+					
+					
+					</div></div></div>
+			</div>
+				<div class="col-sm-5 col-lg-offset-1">
+					<div class="titlemodal" id="titlequote">TrueDiggs.com</div>
+						<p class="modaldescription">TrueDiggs.com is a website that allows users to leave feedback about landlords in Brooklyn. I worked as the founder and project manager for this project.</p>
+							<a href="#weathermodal"><button class="modalexit">Back</button></a>
+  							<a href="#merkelmodal"><button class="modalexit">Next</button></a>
+					</div></div></div>
+  
+</div>
+
+<div class="remodal-bg">
+</div>
+<div class="remodal img-reponsive" data-remodal-id="merkelmodal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="container-fluid" id="merkelmodal">
+ <div class="row">
+		<div class="col-xs-6">
+			<img class="modalimage img-responsive" src="img/ipadMerkel.png">
+			<div class="modalicons center-block">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="https://codepen.io/spnichol/full/JKPmPw/"><img class="modalicons" src="img/modal_viewlive.png"></a>
+					<a href="#"><img class="modalicons" src="img/modal_github.png"></a>
+					
+					
+					</div></div></div>
+			</div>
+				<div class="col-sm-5 col-lg-offset-1">
+					<div class="titlemodal" id="titlequote">Merkel Tribute</div>
+						<p class="modaldescription">This was my first FCC project and serves as a “tribute” to Angela Merkel, keeper of the peace in Europe. I designed and developed it.</p>
+							<a href="#tdmodal"><button class="modalexit">Back</button></a>
+  							<a href="#yutlisimplemodal"><button class="modalexit">Next</button></a>
+					</div></div></div>
+  
+</div>
+
+<div class="remodal-bg">
+</div>
+<div class="remodal img-reponsive" data-remodal-id="yutlisimplemodal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="container-fluid" id="yutlisimplemodal">
+ <div class="row">
+		<div class="col-xs-6">
+			<img class="modalimage img-responsive" src="img/iphoneYutli2.png">
+			<div class="modalicons center-block">
+			<div class="row">
+				<div class="col-xs-12">
+					
+					
+					</div></div></div>
+			</div>
+				<div class="col-sm-5 col-lg-offset-1">
+					<div class="titlemodal" id="titlequote">Yutli (Simple)</div>
+						<p class="modaldescription">This is another hand-coded mock-up for Yutli. This one takes a simpler approach, putting the call to action front and center.</p>
+							<a href="#merkelmodal"><button class="modalexit">Back</button></a>
+  							<a href="#yutlimodal"><button class="modalexit">Next</button></a>
+					</div></div></div>
+  
+</div>
+
+
+
+
+
+
   
 
 
 
 
 
-<div class="yutlilanding" style="display: none;"  id="yutlihidden">
-		<div class="container-fluid">
-<div class="mycustomnav">
-				<div class="leftbuttons">
-				<div class="row">
-				<a href="index.html"><button class="myworkpagesbuts" href="index.html">HOME</button></a>
-				<button class="myworkpagesbuts infobut" id="info"  onclick="leftslideAnim();">INFO</button>
-			
-				<button class="myworkpagesbuts rightbutton" onclick="yuliClose();">CLOSE</button>
-				</div></div></div></div>
-				<div class="work-description1 text-center">Yutli<span class="lineTD">|</span>.com</div><!-- workdescription1 --> 
-	 		<div class="yutliImages">
-				<img class="deskptopYutli center-block img-responsive" src="img/desktopYutli.png">
-				<img class="iphoneYutli center-block" style="display: none;"  src="img/iphoneYutli.png">
-				<img class="ipadYutli center-block" style="display: none;" src="img/ipadYutli.png">
-				</div><!--yutliImages-->
-				
-				
-				<img class="sqigline center-block" src="img/sqigline.png"></section>
-		 		
-    			
-   
-
-
-
-  </div><!-- containerfluid --> 
-
-  </div><!--yutlilanding--> 
-		
-
-
-
-		
-			<div class="container quotelanding" style="display: none;"  id="quotehidden">
-			<div class="mycustomnav">
-				<div class="leftbuttons">
-						<a href="index.html"><button class="myworkpagesbuts" href="index.html">HOME</button></a>
-						<button class="myworkpagesbuts" onclick="quoteExpand();" id="info">INFO</button>
-						<button class="myworkpagesbuts rightbutton" onclick="quoteClose();">CLOSE</button>
-</div> <!-- left buttons -->
-</div> <!--mycustomnav-->
-
-			<div class="quoteImages text-center">
-						<div class="work-description1">Quote Machine
-</div><!-- workdescription1 --> 	
-				<img class="desktopQuote" id="dkQuote" src="img/desktopQuote.png">
-				<img class="iphoneQuote center-block" style="display: none;" src="img/iphoneQuote.png">
-				<img class="ipadQuote center-block" style="display: none;" src="img/ipadQuote.png">
-				<div class="line"><img class="sqigline img-responsive" src="img/sqigline.png">
-</div><!--quoteImages--></div>
-<div class="container infoblock text-center">
-				<div class="projecttitle">PROJECT</div>
-					<ul class="info">
-						<li>Role: Designer and Devleoper</li>
-						<li>Reason: FreeCodeCamp.com Project</li>
-						<li>Tools: Bootstrap</li>
-						<li>Github: <a href="https://github.com/spnichol/quotemachine">Github</a></li>
-						<li>Live: <a href=#>Quote Machine</a></li>
-						</ul></div>	
-				
-</div><!--sqigline-->
-</div> <!--container-flouid quotelanding-->				
-			</section>
 
 								
 
@@ -239,6 +318,7 @@
 <script type="text/javascript" src="node_modules/remodal/dist/remodal.min.js"></script>
 <script type="text/javascript" src="js/myworknav.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/hint.js"></script>
 
 
 
